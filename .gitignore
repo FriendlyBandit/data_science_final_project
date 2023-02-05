@@ -1,3 +1,14 @@
+# Custom
+*.fa
+*.narrowPeak
+*.tsv 
+*.zip
+*.pptx
+*.gff
+*.xml
+TFBS Regression Modeling
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
