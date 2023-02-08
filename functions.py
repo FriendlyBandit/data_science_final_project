@@ -12,12 +12,11 @@ def get_linear_regression_matrix():
     narrowpeak_only_height_name['sequence_name'] = sequence_name_generated
     # Columns follow this format: https://genome.ucsc.edu/FAQ/FAQformat.html#format12
     # We will use the 4th column (0 indexed), or score.
-    narrowpeak_only_height_name['peak_height'] = narrowpeak.iloc[:,4]
+    narrowpeak_only_height_name['signal_value'] = narrowpeak.iloc[:,4]
     narrowpeak_only_height_name.head(3)
 
     joined_dataframe = count_dataframe.join(narrowpeak_only_height_name.set_index('sequence_name'), on='sequence_name')
     return joined_dataframe
-
 
 def get_wide_matrix(data: pd.DataFrame):
     sequences = list(data['sequence_name'].unique())
