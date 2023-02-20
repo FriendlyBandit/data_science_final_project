@@ -1,0 +1,13 @@
+.left-label{
+    position: absolute;
+    right: 20rem;
+    top: 10rem;
+}
+
+.container{
+    position: relative;
+}
+
+table{
+    margin-left: 10rem;
+}
